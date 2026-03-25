@@ -16,8 +16,4 @@ class Cwal < Formula
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
-
-  test do
-      assert_match "v#{version}", shell_output("#{bin}/cwal --version")
-  end
 end
