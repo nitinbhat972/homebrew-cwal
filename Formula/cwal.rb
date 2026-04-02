@@ -9,7 +9,7 @@ class Cwal < Formula
   depends_on "pkgconf" => :build
   depends_on "imagemagick"
   depends_on "libimagequant"
-  depends_on "lua"
+  depends_on "luajit"
 
   def install
     system "cmake", "-B", "build", "-DCMAKE_BUILD_TYPE=Release", *std_cmake_args
